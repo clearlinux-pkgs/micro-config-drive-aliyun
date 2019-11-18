@@ -1,6 +1,6 @@
 Name     : micro-config-drive-aliyun
 Version  : 1
-Release  : 1
+Release  : 2
 Summary  : Start Aliyun cloud-config user data helper at boot time
 Group    : Development/Tools
 License  : GPL-3.0
