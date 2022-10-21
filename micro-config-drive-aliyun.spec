@@ -1,6 +1,6 @@
 Name     : micro-config-drive-aliyun
 Version  : 1
-Release  : 4
+Release  : 5
 Summary  : Start Aliyun cloud-config user data helper at boot time
 Group    : Development/Tools
 License  : GPL-3.0
@@ -16,9 +16,9 @@ A config-drive handler for Aliyun.
 %install
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/lib/systemd/system/multi-user.target.wants
-ln -sf ../ucd-aliyun.service %{buildroot}/usr/lib/systemd/system/multi-user.target.wants/ucd-aliyun.service
+ln -sf ../ucd@.service %{buildroot}/usr/lib/systemd/system/multi-user.target.wants/ucd@aliyun.service
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/systemd/system/multi-user.target.wants/ucd-aliyun.service
+/usr/lib/systemd/system/multi-user.target.wants/ucd@aliyun.service
 
